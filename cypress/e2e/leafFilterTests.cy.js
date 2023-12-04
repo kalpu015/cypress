@@ -2,6 +2,7 @@
 import homepage from "../Pages/homepage";
 import zipCheckerFormPage from "../Pages/zipCheckerFormPage";
 
+
 describe('LeafFilter Zip Checker Form Tests', () => {
   Cypress.on('uncaught:exception', (err, runnable) => {
     return false;
@@ -79,6 +80,8 @@ let testData;
 
   cy.get('#gform_next_button_2_59:first').click();
 
+  cy.wait(2000);
+
   cy.get('#validation_message_2_28:first').should('be.visible');
   cy.get('#validation_message_2_29:first').should('be.visible');
   cy.get('#validation_message_2_31:first').should('be.visible');
@@ -94,6 +97,7 @@ let testData;
     cy.get('#input_2_31:first').type(email);
 
     cy.get('#gform_next_button_2_59:first').click();
+
     cy.wait(3000);
 
     //veriify phone error message 
@@ -119,6 +123,12 @@ let testData;
   .should('eq', 'Thanks John,');
 
   cy.get('.button-wrapper > .tel-link').should('be.visible');
+  cy.get('#estimateModal > div > div > button').click();
+
+  cy.wait(1000);
+  cy.get('.header-logo > .image').click();
+
+  cy.log('test Completed.Endingcypress test run');
   
     
   })
