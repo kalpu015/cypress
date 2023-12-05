@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+   
+
+    "test": "npm run cypress-test"
   },
   "keywords": [],
   "author": "",
@@ -12,9 +14,14 @@
   "dependencies": {
     "cypress": "^13.6.0"
   },
-
   "compilerOptions": {
-    "lib": ["ES2018"],
+    "lib": [
+      "ES2018"
+    ],
     "target": "ES2018"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.7.0",
+    "mochawesome-merge": "^4.3.0"
   }
 }
