@@ -5,6 +5,7 @@ module.exports = defineConfig({
   e2e: {
     watchForFileChanges : false,
     screenshotOnRunFailure : true,
+    trashAssetsBeforeRuns : true,
   
   
     setupNodeEvents(on, config) {
