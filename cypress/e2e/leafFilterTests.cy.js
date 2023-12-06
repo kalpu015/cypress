@@ -59,13 +59,13 @@ let testData;
 
     cy.get('#gform_next_button_2_38').click();
 
-  cy.wait(4000);
+  cy.wait(5000);
+
+  cy.screenshot('popup with 50%')
 
   cy.get('#gf_progressbar_wrapper_2 > div > div:first')
   .invoke('text')
   .should('eq', '50%');
-
-  cy.screenshot('popup with 50%')
 
   cy.get('#label_2_63_2').click({ force: true });
 
