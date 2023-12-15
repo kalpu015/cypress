@@ -1,31 +1,21 @@
-
-
 {
-    "zipCodeData": {
-      "validZipCode": "20005",
-      "invalidZipCode": "ABCDE"
-      
-    },
+  "zipCodeData": {
+    "validZipCode": "20005",
+    "invalidZipCode": "ABCDE"
+  },
   
-    "phoneNumber": {
-      "validPhoneNumber" : "555-867-5309"
+  "phoneNumber": {
+    "validPhoneNumber" : "555-867-5309"
+  },
+
+  "userData": {
+    "valid": {
+      "Name": "John Doe",
+      "email": "john.doe@example.com"
     },
-    
-  
-    "userData": {
-      "user1": {
-        "firstName": "John",
-        "lastName": "Doe",
-        "email": "john.doe@example.com"
-      },
-      "user2": {
-        "firstName": "Jane",
-        "lastName": "Smith",
-        "email": "jane.smith@example.com"
-      }
-      
+    "invalid": {
+      "NameInvalid": "Jane",
+      "email": "jane.smith@example.com"
     }
-    
   }
-  
-  
+}

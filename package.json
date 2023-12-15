@@ -4,16 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-   
-
     "test": "npm run cypress-test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^13.6.0"
-  },
   "compilerOptions": {
     "lib": [
       "ES2018"
@@ -21,6 +16,7 @@
     "target": "ES2018"
   },
   "devDependencies": {
+    "cypress": "^13.0.0",
     "cypress-mochawesome-reporter": "^3.7.0",
     "mochawesome-merge": "^4.3.0"
   }

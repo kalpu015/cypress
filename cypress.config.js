@@ -6,17 +6,23 @@ module.exports = defineConfig({
     watchForFileChanges : false,
     screenshotOnRunFailure : true,
     trashAssetsBeforeRuns : true,
+    video : true,
+    videoCompression : true,
+
+    
   
   
     setupNodeEvents(on, config) {
+    
 
       require('cypress-mochawesome-reporter/plugin')(on);
-      
-
 
 
       // implement node event listeners here
     },
+
+  
+    
 
     
   },
