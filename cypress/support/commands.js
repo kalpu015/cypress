@@ -25,5 +25,12 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // cypress/support/commands.js
-
+Cypress.Commands.add("clickRecaptcha", () => {
+    cy.window().then(win => {
+      win.document
+        .querySelector("iframe[src*='recaptcha']")
+        .contentDocument.getElementById("recaptcha-token")
+        .click();
+    });
+  });
   

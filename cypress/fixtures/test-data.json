@@ -1,11 +1,15 @@
+
+
 {
   "zipCodeData": {
     "validZipCode": "20005",
-    "invalidZipCode": "ABCDE"
+    "invalidZipCode": "1111",
+    "invalidmax": "111110" 
   },
   
   "phoneNumber": {
-    "validPhoneNumber" : "555-867-5309"
+    "validPhoneNumber" : "555-867-5309",
+    "invalidPhoneNumber" : "abc-abc-anhv"
   },
 
   "userData": {
@@ -19,3 +23,5 @@
     }
   }
 }
+
+

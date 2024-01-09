@@ -1,4 +1,4 @@
-import homepage from "../Pages/homepage";
+import homepage, {urls} from '../Pages/homePage';
 import zipCheckerFormPage from "../Pages/zipCheckerFormPage";
 
 describe('LeafFilter Zip Checker Form Tests', () => {
@@ -12,7 +12,7 @@ describe('LeafFilter Zip Checker Form Tests', () => {
       // Load test data from the fixture
       cy.fixture('test-data.json').as('testData');
   
-      homepage.visit();
+      cy.visit(urls.HomePage);
       cy.wait(40000);
   
     })
@@ -107,6 +107,7 @@ cy.get('.justify-center > .btn').scrollIntoView();
 cy.get('.justify-center > div.mx-auto > .d-flex > :nth-child(7) > .progress-bar')
   .should('have.css', 'background-color', 'rgb(0, 133, 62)');
 
+  
 // Continue to the next step
 cy.get('.justify-center > .btn').click();
 cy.wait(3000);
