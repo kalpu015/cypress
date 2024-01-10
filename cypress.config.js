@@ -10,9 +10,6 @@ module.exports = defineConfig({
     videoCompression : true,
     chromeWebSecurity: false,
     defaultCommandTimeout : 100000,
-
-    
-  
   
     setupNodeEvents(on, config) {
     

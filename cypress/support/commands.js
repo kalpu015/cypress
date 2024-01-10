@@ -25,6 +25,8 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // cypress/support/commands.js
+/// <reference types = "cypress-xpath"/>
+
 Cypress.Commands.add("clickRecaptcha", () => {
     cy.window().then(win => {
       win.document
